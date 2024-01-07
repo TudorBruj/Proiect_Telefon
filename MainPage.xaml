@@ -9,11 +9,17 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <Frame
+                    CornerRadius="100"
+                    HasShadow="False"
+                    Padding="0"
+                    HeightRequest="200"
+                    WidthRequest="200"
+                    HorizontalOptions="Center">
+                <Image
+                    Source="retail.png"
+                    Aspect="AspectFill"/>
+            </Frame>
 
             <Label
                 Text="Bine ati venit!"
