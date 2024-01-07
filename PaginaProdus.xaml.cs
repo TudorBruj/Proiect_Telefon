@@ -24,6 +24,11 @@ public partial class PaginaProdus : ContentPage
         await App.Database.DeleteProductAsync(produs);
         listView.ItemsSource = await App.Database.GetProductsAsync();
     }
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        listView.ItemsSource = await App.Database.GetProductsAsync();
+    }
 
     async void OnAddButtonClicked(object sender, EventArgs e)
     {
@@ -40,11 +45,5 @@ public partial class PaginaProdus : ContentPage
             p.ListaProduse = new List<ListaProdus> { lp };
             await Navigation.PopAsync();
         }
-    }
-
-    protected override async void OnAppearing()
-    {
-        base.OnAppearing();
-        listView.ItemsSource = await App.Database.GetProductsAsync();
     }
 }
