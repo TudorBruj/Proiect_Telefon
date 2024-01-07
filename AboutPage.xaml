@@ -2,16 +2,21 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
  x:Class="Proiect_Telefon.AboutPage"
- Title="AboutPage">
+ Title="Retail-Go">
     <VerticalStackLayout Spacing="10" Margin="10">
         <HorizontalStackLayout Spacing="10">
-            <Image Source="shop_list.png"
+            <Image Source="cos_cumparaturi.png"
  SemanticProperties.Description="Produse si Magazine"
-HeightRequest="64" />
-            <Label FontSize="22" FontAttributes="Bold" Text="Recenzii si detalii comenzi" VerticalOptions="End" />
+HeightRequest="35" />
+            <Label FontSize="22" FontAttributes="Bold" Text="Cos si Management Produse" VerticalOptions="End" />
             <Label FontSize="22"  VerticalOptions="End" />
         </HorizontalStackLayout>
-        <Label Text="Aplicatia aceasta te va lasa sa ne lasi recenzii si sa vezi detaliile comenzilor tale!" />
-
+        <Label Text="Aplicatia aceasta te va lasa sa iti adaugi produse in cos si sa iti faci o lista cu produsele preferate! " />
+        
+        
+        <Frame CornerRadius="100" Padding="0" BackgroundColor="White" HasShadow="True"
+               HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Image Source="retail.png" HeightRequest="200" WidthRequest="200" Aspect="AspectFill" />
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

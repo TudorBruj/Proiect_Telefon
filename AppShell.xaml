@@ -9,7 +9,7 @@
     <TabBar>
         
     <ShellContent
-        Title="Home"
+        Title="Retail-Go"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" 
         />
@@ -17,6 +17,9 @@
     <ShellContent
          Title="About"
          ContentTemplate="{DataTemplate local:AboutPage}"
+        />        <ShellContent
+        Title="Cos de cumparaturi"
+        ContentTemplate="{DataTemplate local:CartEntryPage}"
         />
     </TabBar>
 
